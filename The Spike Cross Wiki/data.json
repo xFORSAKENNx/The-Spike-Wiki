@@ -1012,6 +1012,362 @@
       { "level": 4, "upgrade_details": "<strong>[Status]</strong> ATQ +2, Salto +1, Altura +1m"},
       { "level": 5, "upgrade_details": "<strong>[Status]</strong> ATQ +2, Salto +1, Altura +2m"}
     ]
+  },
+  {
+    "name": "Yamadera",
+    "rank": "S",
+    "position": "MB",
+    "height": "194cm",
+    "number": "06",
+    "birthday": "11 de Agosto",
+    "summary": "Central titular do Valentia Spikes, tem dificuldade em socializar e é conhecido pela preguiça extrema. Sua expressão sempre abatida e o jeito direto de falar fazem com que seja facilmente mal-interpretado. Estudou no mesmo colégio que Nishikawa, mas em uma série inferior. Introvertido, perfeccionista e pouco sociável, passou por uma adolescência complicada, até que sua vida mudou quando Nishikawa o convidou para entrar no time de vôlei no ensino médio. Desde então, forma com ele uma dupla excêntrica e de grande destaque. Em quadra, observa cada detalhe e encontra soluções rápidas para neutralizar os pontos fortes dos adversários.",
+    "phrase": "A velocidade corrompe a alma.",
+    "atributes": {
+      "Attack": "Max / 175",
+      "Defense": "120 / 160",
+      "Velocity": "130 / 160",
+      "Salto": "Max / 160"
+    },
+    "image_main": "img/yamadera_main.jpeg",
+    "image_status": "img/yamadera_status.jpeg",
+    "skills": [
+      {
+        "name": "Impedimento",
+        "desc": "Quando Recepção um Ataque que não foi parado por Bloqueio, o Jogador Adversário que realizou o Ataque recebe estado de Lock por um curto período. Enquanto estiver em Lock, não pode usar Peixinho e suas Vel e Salto diminuem."
+      },
+      {
+        "name": "Movimento Leve",
+        "desc": "Realiza Ataque Rápido com Corrida de Impulso leve."
+      },
+      {
+        "name": "Reforço",
+        "desc": "Com base no número de Ace consecutivos realizados por Jogador Adversário, o DEF dos Jogador do Time aumenta em 15 a cada vez."
+      }
+    ],
+    "combos": [
+      
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> <br><strong>[Impedimento]</strong> Alvo Impedimento: Salto -70.1%, Vel -70.1%"},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> Vel +2, Salto +1, DEF +2<br><strong>[Impedimento]</strong> Alvo Impedimento: Salto -84%, Vel -84%"},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> ATQ +2, Salto +1<br><strong>[impedimento]</strong> Impedimento: Salto -84%, Vel -84%"},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> Vel +2, DEF +2<br><strong>[Impedimento]</strong> Alvo Impedimento: Salto -84%, Vel -84%"},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> ATQ +3<br><strong>[Impedimento]</strong> Alvo Impedimento: Salto -84%, Vel -84%"}
+    ]
+  },
+  {
+    "name": "Sanghyeon",
+    "rank": "S",
+    "position": "MB",
+    "height": "188cm",
+    "number": "07",
+    "birthday": "01 de Abril",
+    "summary": "Conhecido como o ídolo da Quadra, atrai multidões de fãs graças à altura e à boa aparência. Consciente do próprio carisma, criou o «Desafio Superstar», onde acabou assumindo mais o papel de produtor e marketeiro do que de jogador. O projeto abriu portas para novos talentos do ensino médio chegarem ao cenário profissional, mas também levou muitos a desistirem devido à exploração exagerada do esporte. Assim, ele se tornou uma figura que representa tanto os benefícios quanto os excessos da comercialização do vôlei. No fundo, porém, leva o esporte mais a sério do que qualquer outro. Ganhou destaque no Colégio de Artes como atleta e criador, mas já era conhecido desde o ensino fundamental por ter fundado uma liga estudantil de vôlei. Sua frustração com o fracasso dessa liga em atrair público foi justamente o que despertou seu interesse pela promoção do esporte. Mais tarde, alguém reconheceu seu talento e lhe abriu as portas para estudar na Itália.",
+    "phrase": "Para estar acima, é preciso ser diferente ☆",
+    "atributes": {
+      "Attack": "Max / 165",
+      "Defense": "135 / 155",
+      "Velocity": "120 / 160",
+      "Salto": "Max / 165"
+    },
+    "image_main": "img/sanghyeon_main.jpeg",
+    "image_status": "img/sanghyeon_status.jpeg",
+    "skills": [
+      {
+        "name": "Melhores Momentos",
+        "desc": "Enquanto Habilidade estiver ativo, todos os Status dos Jogador do Time aumentam. ATQ +90, Vel +35, DEF +100, Salto +9"
+      },
+      {
+        "name": "Traço de Arco-Íris",
+        "desc": "Altera a cor da Número de Ralis da Bola durante o Arremesso de Saque."
+      }
+    ],
+    "combos": [
+      
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> <br><strong>[Melhores Momentos]</strong>Tempo de Espera: 30sec, Duração: 5sec" },
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> <br><strong>[Melhores Momentos]</strong>Tempo de Espera: 30sec, Duração: 6sec" },
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> ATQ +2, Vel +2, DEF +2<br><strong>[Melhores Momentos]</strong>Tempo de Espera: 30sec, Duração: 6sec</strong>" },
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> ATQ +1. Vel +1, DEF +1<br><strong>[Melhores Momentos]</strong>Tempo de Espera: 30sec, Duração: 6sec" },
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> Vel +2, DEF +1<br><strong>[Melhores Momentos]</strong>Tempo de Espera: 30sec, Duração: 6sec" }
+    ]
+  },
+  {
+    "name": "Hanla",
+    "rank": "S",
+    "position": "MB",
+    "height": "182cm",
+    "number": "07",
+    "birthday": "28 de Julho",
+    "summary": "Uma das quatro maiores lutadoras do Colégio Seonlim, é tão habilidosa em artes marciais que muitos dizem que sua técnica até supera a de Ryuhyeon. Ainda assim, reconhece nele o verdadeiro discípulo supremo da Seonlim e se dedica a apoiá-lo. Na escola, atua quase como chefe da disciplina, resolvendo a maioria dos problemas. Apesar da aparência fria e séria, guarda uma paixão secreta por coisas fofas, mas acredita que isso não combina com sua imagem e tenta esconder dos outros. No fundo, é atenciosa: sempre que encontra Hongshi ou Sodam, faz um carinho na cabeça deles ou oferece algo para comer.",
+    "phrase": "Os verdadeiros fortes são aqueles que sabem ser gentis",
+    "atributes": {
+      "Attack": "Max / 170",
+      "Defense": "130 / 155",
+      "Velocity": "120 / 155",
+      "Salto": "Max / 165"
+    },
+    "image_main": "img/hanla_main.jpeg",
+    "image_status": "img/hanla_status.jpeg",
+    "skills": [
+      {
+        "name": "Coração do Sol",
+        "desc": "A probabilidade de os Jogador do Time entrarem no estado Desanimado diminui em 70%"
+      },
+      {
+        "name": "Recepção Solar",
+        "desc": "Ao realizar Recepção, Alcance de Defesa aumenta em 33%, DEF em 70 e Vel em 18."
+      },
+      {
+        "name": "Cortada Afiada",
+        "desc": "Reduz o Efeito da Bola e realiza um Cortada quase vertical"
+      },
+      {
+        "name": "Finta Topspin",
+        "desc": "O Bola realizado com Finta cai mais rápido devido à rotação."
+      },
+      {
+        "name": "Bloqueio Resistente",
+        "desc": "Aumenta a Precisão do tempo de salto Bloqueio dos Jogador não controlados."
+      }
+    ],
+    "combos": [
+      {
+        "name": "Sob o Sol Escaldante",
+        "team_images": ["img/oasis_main.jpeg", "img/hanla_main.jpeg"],
+        "benefits": "A pontuação de ativação do Oásis Meio-dia foi alterado para 9"
+      }
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> ATQ +4, Salto +3<br><strong></strong> "},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> ATQ +3, Salto +3<br><strong></strong> "},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> Vel +5, Salto +2<br><strong></strong> "},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> Vel +3, DEF +8<br><strong></strong> "},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> Vel +2, DEF +2<br><strong></strong> "}
+    ]
+  },
+  {
+    "name": "Mike",
+    "rank": "S",
+    "position": "MB",
+    "height": "200cm",
+    "number": "07",
+    "birthday": "11 de Novembro",
+    "summary": "Irmão gêmeo de Dave, administra com ele um chalé e mantém a fama de atleta dedicado a treinos extremos. Desde jovem, era conhecido por correr com pneus amarrados à cintura e, até hoje, treina com sacos de areia presos aos tornozelos para fortalecer o corpo. Não tem muito cabelo, mas suas costeletas chamam atenção por serem incrivelmente cheias. Reza a lenda que começa todos os dias diante do espelho, cuidando delas com orgulho.",
+    "phrase": "O suor é a prova da verdade!",
+    "atributes": {
+      "Attack": "Max / 165",
+      "Defense": "140 / 160",
+      "Velocity": "120 / 160",
+      "Salto": "Max / 160"
+    },
+    "image_main": "img/mike_main.jpeg",
+    "image_status": "img/mike_status.jpeg",
+    "skills": [
+      {
+        "name": "Pneu",
+        "desc": "Enquanto o pneu existir, Vel e Salto diminuem. Ao receber Recepção, o Medidor do pneu é Carga. Quando o Medidor atinge o máximo, o pneu estoura e ATQ, Salto e Vel aumentam."
+      },
+      {
+        "name": "Ataque Traseiro Poderoso",
+        "desc": "Ao realizar Cortada por trás da Linha de Ataque, a Potência do Bola aumenta em 5.5."
+      }
+    ],
+    "combos": [
+      {
+        "name": "Primeiro os Mais Velhos, Depois os Mais Novos",
+        "team_images": ["img/dave_main.jpeg", "img/mike_main.jpeg"],
+        "benefits": "Aumenta a velodidade das flexões de Dave em 20%"
+      }
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> ATQ +3, Vel +5<br><strong>[Pneu]</strong> (Quando o pneu existe) Vel -35, Salto -15. (Quando o pneu é destruido) ATQ +14, Vel +20, Salto +13"},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> ATQ +2, Vel +5<br><strong>][Pneu]</strong> (Quando pneu existe) Vel -38.5, Vel -15. (Quando o pneu é destruido) ATQ +15, Vel +22, Salto +13"},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> Vel +5, Salto +2<br><strong>[Pneu]</strong> (Quando o pneu existe) Vel -42, Salto -16. (Quando o pneu é destruido) ATQ +17, Vel +24, Salto +14"},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> ATQ +2, Vel +3, DEF +3<br><strong>[Pneu]</strong> (Quando o pneu existe) Vel -43.75, Salto -16. (Quando o pneu é destruido) ATQ +17, Vel +25, Salto +14"},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> Vel +2, DEF +2<br><strong>[Pneu]</strong> (Quando o pneu existe) Vel -43.75, Salto -16. (Quando o pneu é destruido) ATQ +17, Vel +25, Salto +14"}
+    ]
+  },
+  {
+    "name": "Clyde",
+    "rank": "S-",
+    "position": "MB",
+    "height": "173cm",
+    "number": "35",
+    "birthday": "8 de Agosto",
+    "summary": "É o central titular da Equipe Juvenil de Vôlei Rockwell. Não chega ao nível da Tânia, mas também vem de família rica. Vive no seu próprio ritmo, sem pressa. Quando some por um tempo, nove em cada dez vezes está brincando com gatos. Quando era criança desaparecia atrás de gatos e Tânia sempre acabava indo buscá-lo. Até hoje Tânia continua sendo sua única amiga e os dois ainda vivem brigando quando se encontram.",
+    "phrase": "Não consigo viver sem gatos.",
+    "atributes": {
+      "Attack": "Max / 165",
+      "Defense": "125 / 160",
+      "Velocity": "125 / 160",
+      "Salto": "Max / 160"
+    },
+    "image_main": "img/clyde_main.jpeg",
+    "image_status": "img/clyde_status.jpeg",
+    "skills": [
+      {
+        "name": "Nina",
+        "desc": "O gato querido de Clyde aparece junto com ele. O gato percorre a Quadra e altera Compnheiro de Equipe de Desanimado para Engajado. Resistência Máxima do Time Aliado aumenta em 15%"
+      }
+    ],
+    "combos": [
+      
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> Vel +2, Salto +2, DEf +2<br><strong></strong> "},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> ATQ +3, Salto +1<br><strong></strong> "},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> ATQ +3, Vel +3, Salto +1, DEF +3<br><strong></strong> "},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> ATQ +2<br><strong></strong> "},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> ATQ +1, Vel +3, DEF +3<br><strong></strong> "}
+    ]
+  },
+  {
+    "name": "Hari",
+    "rank": "S",
+    "position": "MB",
+    "height": "174cm",
+    "number": "21",
+    "birthday": "22 de Dezembro",
+    "summary": "Ex-Rainha do Coliseu e integrante do Conselho dos 15 da Liga Phantom, Isabel assumiu sua posição de destaque depois do seu desaparecimento no Coliseu. Quando Carla dá uma ordem, ela a cumpre sem hesitar. Mas há apenas uma exceção, ela nunca tira a munhequeira suja e desgastada que usa no punho esquerdo. Essa é a única ordem que recusa, e apenas ela e Carla conhecem o motivo. Sua especialidade é analisar o adversário com precisão e dominar a partida por completo. Os oponentes nunca conseguem mostrar seu melhor desempenho e acabam completamente travados",
+    "phrase": "...",
+    "atributes": {
+      "Attack": "Max / 170",
+      "Defense": "120 / 160",
+      "Velocity": "135 / 160",
+      "Salto": "Max / 160"
+    },
+    "image_main": "img/hari_main.jpeg",
+    "image_status": "img/hari_status.jpeg",
+    "skills": [
+      {
+        "name": "Death Bloom",
+        "desc": "Quando Recepção, deixa uma marca no Jogador Adversário que Tocou por último a Bola. Ao Habilidade Ativação, o Status de todos os Jogador Adversário marcados diminui por um determinado período de tempo. Jogador Adversário com duas ou mais marcas tem o movimento selado brevemente logo após Habilidade Ativação."
+      },
+      {
+        "name": "Recebimento da Flor",
+        "desc": "O Alcance de Defesa de Recepção aumenta em 33%, e DEF e Vel também aumentam."
+      },
+      {
+        "name": "Movimento Leve",
+        "desc": "Realiza Ataque Rápido com Corrida de Impulso leve."
+      },
+      {
+        "name": "Bloqueio Resistente",
+        "desc": "Aumenta a Precisão do tempo de salto Bloqueio dos Jogador não controlados."
+      }
+    ],
+    "combos": [
+      {
+        "name": "Double Queen",
+        "team_images": ["img/isabel_main.jpeg", "img/hari_main.jpeg"],
+        "benefits": "Aumenta o HP máximo dos aliados em 10"
+      },
+      {
+        "name": "Brasa do Abismo",
+        "team_images": ["img/ellio_main.jpeg", "img/jenny_main.jpeg", "img/hari_main.jpeg"],
+        "benefits": "ATQ +4, DEF +10, Vel +2, Salto +5"
+      }
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> ATQ +5, Salto +3, DEF +3<br><strong>[Recebimento da Flor]</strong> DEF +33, Vel +8.8<br><strong>[Death Bloom]</strong> (Máximo) Alvo Deatch Bloom ATQ -160, DEF -148.5, Vel -148.5, Salto -72"},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> ATQ +3, Salto +2, DEF +2<br><strong>[Recebimento da Flor]</strong> DEF +36, Vel +9.6<br><strong>[Death Bloom]</strong> (Máximo) Alvo Deatch Bloom ATQ -168, DEF -155.25, Vel -155.25, Salto -75"},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> ATQ +5, Salto +1<br><strong>[Recebimento da Flor]</strong> DEF +39, Vel +10.4<br><strong>[Death Bloom]</strong> (Máximo) Alvo Deatch Bloom ATQ -175, DEF -162, Vel -162, Salto -79"},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> ATQ +2, Salto +1<br><strong>[Recebimento da Flor]</strong> DEF +42, Vel +11.2<br><strong>[Death Bloom]</strong> (Máximo) Alvo Deatch Bloom ATQ -190, DEF -175.5, Vel -175.5, Salto -85"},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> Vel +5, Salto +1, DEF +5<br><strong>[Recebimento da Flor]</strong> DEF +45, Vel +12<br><strong>[Death Bloom]</strong> (Máximo) Alvo Deatch Bloom ATQ -219, DEF -202.5, Vel -202.5, Salto -98"}
+    ]
+  },
+  {
+    "name": "Crow",
+    "rank": "S-",
+    "position": "MB",
+    "height": "191cm",
+    "number": "16",
+    "birthday": "7 de Julho",
+    "summary": "Central que atuava em dupla com Isabel, era reconhecida como uma das melhores jogadoras ao lado dela e se destacou no Coliseu. Apesar de ser irritadiça e um tanto obsessiva, demonstra grande carinho e companheirismo ao cuidar de Isabel.",
+    "phrase": "Viva o momento.",
+    "atributes": {
+      "Attack": "Max / 150",
+      "Defense": "140 / 160",
+      "Velocity": "140 / 160",
+      "Salto": "Max / 145"
+    },
+    "image_main": "img/crow_main.jpeg",
+    "image_status": "img/crow_status.jpeg",
+    "skills": [
+      {
+        "name": "Corvo Sombrio",
+        "desc": "Realiza um Cortada que reduz temporariamente o DEF do Jogador Adversário"
+      },
+      {
+        "name": "Recuperação Rápida",
+        "desc": "A quantidade de Resistência recuperada em Marcação de Ponto e Perda de Ponto aumenta em 25%"
+      }
+    ],
+    "combos": [
+      
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> Vel +2, Salto +2, DEF +2<br><strong>[Corvo Sombrio</strong> Redução de DEF -44.4%"},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> ATQ +3, Salto +1<br><strong>[Corvo Sombrio</strong> Redução de DEF -49.5%"},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> ATQ +3, Vel +3, Salto +1, DEF +3<br><strong>[Corvo Sombrio</strong> Redução de DEF -51.7%"},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> ATQ +2<br><strong>[Corvo Sombrio</strong> Redução de DEF -53.7%"},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> ATQ +1, Vel +3, DEF +3<br><strong>[Corvo Sombrio</strong> Redução de DEF -55.6%"}
+    ]
+  },
+  {
+    "name": "Claire",
+    "rank": "S",
+    "position": "MB",
+    "height": "193cm",
+    "number": "05",
+    "birthday": "2 de Fevereiro",
+    "summary": "Arrogante ao extremo, mas com talento de sobra, ele é um central genial. Sua aparência marcante e o estilo de jogo chamam atenção por onde passa, conquistando fãs em todos os lugares. Apesar da fama de ser péssimo com o público, ele tenta se esforçar para parecer educado e atencioso. A sorte com rivais nunca esteve ao seu lado, antes era Lucas, agora é Raul. «Sempre o segundo lugar na Liga Phantom>>. Revoltado por nunca ter conquistado o MVP, passou a nutrir uma rivalidade feroz com os dois que levaram o título. Para superar Raul, decidiu mudar de posição e jogar como central. Agora, seu único foco é conquistar o MVP desta temporada.",
+    "phrase": "As melhores frutas só nascem em solo férteis",
+    "atributes": {
+      "Attack": "Max / 165",
+      "Defense": "120 / 150",
+      "Velocity": "130 / 150",
+      "Salto": "Max / 170"
+    },
+    "image_main": "img/claire_main.jpeg",
+    "image_status": "img/claire_status.jpeg",
+    "skills": [
+      {
+        "name": "Overdrive",
+        "desc": "Sempre que um Rali termina, o Medidor de Overdrive é Carga em 10%. Enquanto Habilidade estiver em Ativação, o Status dos Jogador do Time aumenta. Quanto maior o Medidor de Carga, maior o aumento de ATQ, Salto e Duração da Habilidade. Não é possivel Ativação durante o Saque, e durante o Saque o Duração não diminui."
+      },
+      {
+        "name": "Levantamento Perfeito Fora do Sistema",
+        "desc": "Ponteiro realiza um Levantamento Duplo otimizado para Cortada, junto ao Rede."
+      },
+      {
+        "name": "Linha de Ataque pela Linha",
+        "desc": "Realiza um Cortada direcionado ao Linha de Fundo."
+      },
+      {
+        "name": "Bloqueio Resistente",
+        "desc": "Aumenta a Precisão do tempo de salto Bloqueio dos Jogador não controlados."
+      }
+    ],
+    "combos": [
+      
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> ATQ +3, Vel +3, DEF +3<br><strong>[Overdrive]</strong> (Máximo) ATQ +197, Salto +14, Duração da Habilidade +13.65 sec"},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> ATQ +1<br><strong>[Overdrive]</strong> (Máximo) ATQ +206, Salto +15, Duração da Habilidade +14.3 sec"},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> ATQ +1, Vel +2, DEF +2<br><strong>[Overdrive]</strong> (Máximo) ATQ +216, Salto +15, Duração da Habilidade +14.95 sec"},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> Vel +3, DEF +3<br><strong>[Overdrive]</strong> (Máximo) ATQ +225, Salto +16, Duração da Habilidade +15.6 sec"},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> Vel +4, Salto +1, DEF +4<br><strong>[Overdrive]</strong> (Máximo) ATQ +225, Salto +16, Duração da Habilidade +15.6 sec"}
+    ]
   }
 ]
-  
