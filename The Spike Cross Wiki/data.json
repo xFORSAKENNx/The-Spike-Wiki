@@ -114,6 +114,11 @@
       "name": "Flor de Dragão",
       "team_images": ["img/sohee_main.jpeg", "img/ryuhyeon_main.jpeg"],
       "benefits": "ATQ +4, Salto +2"
+    },
+    {
+      "name": "Ultramarinho",
+      "team_images": ["img/iris_main.jpeg", "img/ryuhyeon_main.jpeg"],
+      "benefits": "ATQ +7, DEF +5"
     }
   ],
   "ascension_levels": [
@@ -250,7 +255,7 @@
     },
     {
       "name": "All-Star",
-      "team_images": ["img/youngsup_main.jpeg", "img/heesung_main.jpeg", "img/Seolhwa_main.jpeg"],
+      "team_images": ["img/youngsup_main.jpeg", "img/heesung_main.jpeg", "img/seolhwa_main.jpeg"],
       "benefits": "ATQ +4, Salto +4"
     },
     {
@@ -823,11 +828,7 @@
       }
     ],
     "combos": [
-      {
-        "name": "",
-        "team_images": [],
-        "benefits": ""
-      }
+      
     ],
     "ascension_levels": [
       { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
@@ -1273,6 +1274,11 @@
         "name": "Brasa do Abismo",
         "team_images": ["img/ellio_main.jpeg", "img/jenny_main.jpeg", "img/hari_main.jpeg"],
         "benefits": "ATQ +4, DEF +10, Vel +2, Salto +5"
+      },
+      {
+        "name": "Lírio-do-vale",
+        "team_images": ["img/iris_main.jpeg", "img/hari_main.jpeg"],
+        "benefits": "DEF +10, Vel +5"
       }
     ],
     "ascension_levels": [
@@ -1368,6 +1374,58 @@
       { "level": 3, "upgrade_details": "<strong>[Status]</strong> ATQ +1, Vel +2, DEF +2<br><strong>[Overdrive]</strong> (Máximo) ATQ +216, Salto +15, Duração da Habilidade +14.95 sec"},
       { "level": 4, "upgrade_details": "<strong>[Status]</strong> Vel +3, DEF +3<br><strong>[Overdrive]</strong> (Máximo) ATQ +225, Salto +16, Duração da Habilidade +15.6 sec"},
       { "level": 5, "upgrade_details": "<strong>[Status]</strong> Vel +4, Salto +1, DEF +4<br><strong>[Overdrive]</strong> (Máximo) ATQ +225, Salto +16, Duração da Habilidade +15.6 sec"}
+    ]
+  },
+  {
+    "name": "Yuri",
+    "rank": "S",
+    "position": "MB",
+    "height": "185cm",
+    "number": "11",
+    "birthday": "13 de Julho",
+    "summary": "O rebelde dos Black Lions. Ele não se importa nem um pouco com a opinião dos outros, por isso tem a reputação de ser um cara problemático. Graças à sua personalidade de dizer o que pensa para se sentir satisfeito, sempre que dá uma entrevista, costuma aparecer uma notícia de capa nos jornais. Seu objetivo é se tornar um 'jogador melhor que o Victor'. Embora ele ainda seja apenas um jogador reserva dos Black Lions, isso não importa nem um pouco para ele. Ele acredita que esta é a única maneira de retribuir ao Victor, que o guiou para o caminho do vôlei quando ele estava prestes a se desviar. Seguindo sua convicção de que 'não posso viver devendo nada a ninguém', Yuri continua treinando hoje para superar seu objetivo: o Victor.",
+    "phrase": "Quando você toca uma nota errada, se ela se torna boa ou ruim depende da nota que você toca logo em seguida.",
+    "atributes": {
+      "Attack": "Max / 165",
+      "Defense": "100 / 165",
+      "Velocity": "Max / 155",
+      "Salto": "Max / 165"
+    },
+    "image_main": "img/yuri_main.jpeg",
+    "image_status": "img/yuri_status.jpeg",
+    "skills": [
+      {
+        "name": "Analgésico",
+        "desc": "Quando Habilidade é Ativação, Vel e DEF de Companheiro de Equipe aumentam e ATQ e Salto dele aumentam. Sua Força Gravitacional aumenta em 160% e a Velocidade de recuperação appós deslize fica 50% mais rápida."
+      },
+      {
+        "name": "Portão do Cimitério",
+        "desc": "Quando a Resistência do Time Aliado for 15% ou inferior, a Vel e a DEF de Companheiro de Equipe aumentam."
+      },
+      {
+        "name": "Sandman",
+        "desc": "Aumenta a duração do estado Desanimado de Jogador Adversário em 2 segundos."
+      }
+    ],
+    "combos": [
+      {
+        "name": "Rei da Velocidade",
+        "team_images": ["img/yuri_main.jpeg", "img/sohee_main.jpeg"],
+        "benefits": "ATQ +7, Salto +4"
+      },
+      {
+        "name": "Ás Central",
+        "team_images": ["img/sif_main.jpeg", "img/yuri_main.jpeg"],
+        "benefits": "ATQ +10"
+      }
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> Salto +3, ATQ +3<br><strong>[Analgésico]</strong> Duração: 25sec, (Companheiro de Equipe) DEF +30, Vel +30, (a si mesmo) ATQ +35, Tempo de Espera: 15sec<br><strong>[Portão do Cemitério]</strong> DEF +35, Vel +35"},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> <br><strong>[Analgésico]</strong> Duração: 27sec, (Companheiro de Equipe) DEF +30, Vel +30, (a si mesmo) ATQ +35, Tempo de Espera: 15sec<br><strong>[Portão do Cemitério]</strong> DEF +35, Vel +35"},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> Salto +2, ATQ +2<br><strong>[Analgésico]</strong> Duração: 28sec, (Companheiro de Equipe) DEF +36, Vel +36, (a si mesmo) ATQ +42, Tempo de Espera: 14sec<br><strong>[Portão do Cemitério]</strong> DEF +35, Vel +35"},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> DEF +3, Vel +5, Salto +1, ATQ +3<br><strong>[Analgésico]</strong> Duração: 30sec, (Companheiro de Equipe) DEF +36, Vel +36, (a si mesmo) ATQ +42, Tempo de Espera: 14sec<br><strong>[Portão do Cemitério]</strong> DEF +40, Vel +40"},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> DEF +3, Vel +5, Salto +2, ATQ +2<br><strong>[Analgésico]</strong> Duração: 30sec, (Companheiro de Equipe) DEF +39, Vel +39, (a si mesmo) ATQ +45, Tempo de Espera: 12sec<br><strong>[Portão do Cemitério]</strong> DEF +40, Vel +40"}
     ]
   },
   {
@@ -1545,6 +1603,11 @@
         "name": "Força Estável",
         "team_images": ["img/sohee_main.jpeg", "img/youngsup_main.jpeg"],
         "benefits": "ATQ +4, Salto +2"
+      },
+      {
+        "name": "Rei da Velocidade",
+        "team_images": ["img/yuri_main.jpeg", "img/sohee_main.jpeg"],
+        "benefits": "ATQ +7, Salto +4"
       }
     ],
     "ascension_levels": [
@@ -1934,6 +1997,11 @@
         "name": "Unificação de Ataque e Defesa",
         "team_images": ["img/sif_main.jpeg", "img/raul_main.jpeg"],
         "benefits": "A velocidade de carregamento do Raul aumenta em 10%."
+      },
+      {
+        "name": "Ás Central",
+        "team_images": ["img/sif_main.jpeg", "img/yuri_main.jpeg"],
+        "benefits": "ATQ +10"
       }
     ],
     "ascension_levels": [
@@ -1943,6 +2011,58 @@
       { "level": 3, "upgrade_details": "<strong>[Status]</strong> ATQ +2<br><strong>[Parede Gladius]</strong> Tempo de Espera: 12 sec, Duração: 5 sec"},
       { "level": 4, "upgrade_details": "<strong>[Status]</strong> ATQ +1<br><strong>[Parede Gladius]</strong> Tempo de Espera: 11 sec, Duração: 5 sec"},
       { "level": 5, "upgrade_details": "<strong>[Status]</strong> ATQ +2<br><strong>[Parede Gladius]</strong> Tempo de Espera: 11 sec, Duração: 5 sec"}
+    ]
+  },
+  {
+    "name": "Iris",
+    "rank": "S",
+    "position": "SE",
+    "height": "188cm",
+    "number": "08",
+    "birthday": "23 de Novembro",
+    "summary": "Capitâ da Asheville Weasels. Ela herdou a braçadeira e tem liderado o time desde a aposentadoria de Kelly, uma das 5 Melhores Spikers do mundo. Embora tenha um forte senso de responsabilidade e o desejo de liderar bem o time, sua personalidade tímida a faz sofrer constantemente, dividida entre a diretoria e as jogadoras. No entanto, seria um erro enorme pensar que ela é apenas mansa. A capitania das Asheville Weasels não é 0um cargo para quem não tem talento; ela também é uma Levantadora (Setter) excepcional e extremamente exigente. Se uma atacante não consegue seu levantamento, ela repetirá a mesma bola até que consigam. 'A partir de agora, farei o mesmo levantamento novamente.' Dizem que até as veteranas mais experientes das Ashesville Weasels sentem calafrios na espinha ao ouvir sua voz fria como o gelo",
+    "phrase": "O bom é inimigo do ótimo.",
+    "atributes": {
+      "Attack": "Max / 170",
+      "Defense": "100 / 175",
+      "Velocity": "145 / 180",
+      "Salto": "Max / 170"
+    },
+    "image_main": "img/iris_main.jpeg",
+    "image_status": "img/iris_status.jpeg",
+    "skills": [
+      {
+        "name": "Ordem Imperial",
+        "desc": "Quando Habilidade Ativação, três bússolas são geradas na quadra. As bússolas giram em velocidades diferentes, mas sempre há um momento em que elas se sobrepõem em direção à Quadra do Time Adversário. O aumento de Potência de casa bússola é aplicado de forma independente."
+      },
+      {
+        "name": "Tirano Gentil",
+        "desc": "Ao relizar um Levantamento Alto, faz um Levantamento que cai rapidamente. A Bola cai 0.7 segundos mais devagar no ponto de impacto mais alto do Ponteiro."
+      },
+      {
+        "name": "Bússola na Quadra",
+        "desc": "Ao realizar um Levantamento, uma bússola giratória é gerada na Bola. A bússola aponta para a Quadra do Time Adversário no pico de Ponto de Contato com a Bola do Ponteiro. Quando mais próximo o ângulo do Cortada estiver da direção da bússola, mais a Precisão aumenta. Dependendo da Precisão, a Potência e Efeito da Bola aumentarão ou diminuirão. Quanto mais você realizar um Cortada com Precisão PERFECT, mais rápida será a rotação da bússola durante o Jogo."
+      }
+    ],
+    "combos": [
+      {
+        "name": "Ultramarinho",
+        "team_images": ["img/iris_main.jpeg", "img/ryuhyeon_main.jpeg"],
+        "benefits": "ATQ +7, DEF +5"
+      },
+      {
+        "name": "Lírio-do-vale",
+        "team_images": ["img/iris_main.jpeg", "img/hari_main.jpeg"],
+        "benefits": "DEF +10, Vel +5"
+      }
+    ],
+    "ascension_levels": [
+      { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
+      { "level": 1, "upgrade_details": "<strong>[Status]</strong> DEF +5, Vel +5<br><strong>[Ordem Imperial]</strong> Duração: 5sec, Tempo de Espera: 11sec"},
+      { "level": 2, "upgrade_details": "<strong>[Status]</strong> DEF +5, Vel +5<br><strong>[Ordem Imperial]</strong> Duração: 5sec, Tempo de Espera: 10sec"},
+      { "level": 3, "upgrade_details": "<strong>[Status]</strong> <br><strong>[Ordem Imperial]</strong> Duração: 6sec, Tempo de Espera: 9sec"},
+      { "level": 4, "upgrade_details": "<strong>[Status]</strong> DEF +10, Vel +5<br><strong>[Ordem Imperial]</strong> Duração: 6sec, Tempo de Espera: 8sec"},
+      { "level": 5, "upgrade_details": "<strong>[Status]</strong> DEF +5, Vel +5<br><strong>[Ordem Imperial]</strong> Duração: 6sec, Tempo de Espera: 8sec"}
     ]
   }
 ]
