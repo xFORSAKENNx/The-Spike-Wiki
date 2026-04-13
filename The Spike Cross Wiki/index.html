@@ -36,25 +36,35 @@
 
     <main id="playerGrid" class="player-grid"></main>
 
-    <div id="imageModal" class="modal-overlay" onclick="closeModal(event)">
-        <img class="modal-content" id="modalImg">
-    </div>
-    </main> <div id="detailsModal" class="details-overlay" onclick="closeDetailsModal(event)">
+    <div id="detailsModal" class="details-overlay" onclick="closeDetailsModal(event)">
         <div class="details-content">
             <button class="close-modal-btn" onclick="forceCloseDetailsModal()">×</button>
-            <div id="detailsBody">
-                </div>
+            <div id="detailsBody"></div>
         </div>
     </div>
 
-    <div id="imageModal" class="modal-overlay" onclick="closeModal(event)">
-        <img class="modal-content" id="modalImg">
+    <div id="statusModal" class="status-modal-overlay" onclick="closeStatusModal(event)">
+        <img id="statusImgExpanded" class="status-modal-content">
     </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <footer>
+        <p>&copy; 2026 The Spike Cross Wiki - Todos os direitos reservados.</p>
+        <p>Proibida a reprodução total ou parcial do conteúdo e das artes.</p>
+    </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        // Bloqueia o clique direito
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+        // Bloqueia atalhos de inspeção
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123) { return false; }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
+        }
+    </script>
 </body>
 </html>
