@@ -536,11 +536,7 @@
         }
     ],
     "combos": [
-        {
-            "name":"",
-            "team_images":[],
-            "benefits": ""
-        }
+        
     ],
     "ascension_levels": [
         { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
@@ -583,11 +579,7 @@
       }
     ],
     "combos": [
-      {
-        "name": "",
-        "team_images": [],
-        "benefits": ""
-      }
+     
     ],
     "ascension_levels": [
       { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
@@ -622,11 +614,7 @@
       }
     ],
     "combos": [
-      {
-        "name": "",
-        "team_images": [],
-        "benefits": ""
-      }
+      
     ],
     "ascension_levels": [
       { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
@@ -673,11 +661,7 @@
       }
     ],
     "combos": [
-      {
-        "name": "",
-        "team_images": [],
-        "benefits": ""
-      }
+      
     ],
     "ascension_levels": [
       { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
