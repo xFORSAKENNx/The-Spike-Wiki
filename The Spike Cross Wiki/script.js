@@ -1,35 +1,26 @@
-// script.js
 let players = [];
-let currentOpenedPlayerIndex = null; // Guarda qual jogador está no modal
+let currentOpenedPlayerIndex = null;
 
 async function load() { 
     try {
         const res = await fetch('data.json');
         players = await res.json();
-        renderGrid(players); // Renderiza a grade inicial
+        renderGrid(players);
     } catch (error) {
         console.error("Erro ao carregar dados:", error);
     }
 }
 
-// 1. RENDERIZA APENAS A GRADE (Os cards pequenos)
 function renderGrid(data) {
     const grid = document.getElementById('playerGrid');
     grid.innerHTML = "";
 
     const positions = ["WS", "MB", "SE"];
-    const positionNames = {
-        "WS": "WING SPIKER",
-        "MB": "MIDDLE BLOCKER",
-        "SE": "SETTER"
-    };
+    const positionNames = { "WS": "WING SPIKER", "MB": "MIDDLE BLOCKER", "SE": "SETTER" };
 
     positions.forEach(pos => {
         const playersInPos = data.filter(p => p.position === pos);
-
         if (playersInPos.length > 0) {
-            
-            // 1. Cria o Cabeçalho da Seção
             const sectionHeader = document.createElement('div');
             sectionHeader.className = 'position-section';
             sectionHeader.innerHTML = `
@@ -40,17 +31,11 @@ function renderGrid(data) {
             `;
             grid.appendChild(sectionHeader);
 
-            // 2. Cria os Cards dessa posição
             playersInPos.forEach(p => {
-                // MUDANÇA 1: Agora busca por NOME e POSIÇÃO para diferenciar personagens repetidos (Ex: Sara)
-                const originalIndex = players.findIndex(player => 
-                    player.name === p.name && player.position === p.position
-                );
-                
+                const originalIndex = players.findIndex(player => player.name === p.name && player.position === p.position);
                 const card = document.createElement('div');
                 card.className = 'player-card';
                 card.onclick = () => openDetailsModal(originalIndex);
-
                 card.innerHTML = `
                     <img src="${p.image_main}" class="player-img-main" alt="${p.name}">
                     <div style="padding: 15px">
@@ -64,18 +49,14 @@ function renderGrid(data) {
     });
 }
 
-// 2. FUNÇÃO PARA ABRIR O MODAL E GERAR O CONTEÚDO AMPLIADO
 function openDetailsModal(playerIndex) {
     const p = players[playerIndex];
-    currentOpenedPlayerIndex = playerIndex; 
+    currentOpenedPlayerIndex = playerIndex;
     const modal = document.getElementById('detailsModal');
     const body = document.getElementById('detailsBody');
-
-    // MUDANÇA 2: Reseta o scroll do conteúdo do modal para o topo ao abrir
     const modalContent = modal.querySelector('.details-content');
     if (modalContent) modalContent.scrollTop = 0;
 
-    // Lógica para os atributos
     const attributesHTML = p.atributes ? `
         <div class="attributes-grid">
             <div class="attr-item"><strong>ATQ:</strong> ${p.atributes.Attack || '--'}</div>
@@ -85,7 +66,6 @@ function openDetailsModal(playerIndex) {
         </div>
     ` : '';
 
-    // INJETA O CONTEÚDO AMPLIADO NO MODAL
     body.innerHTML = `
         <div class="modal-player-header">
             <img src="${p.image_main}" class="modal-player-img">
@@ -98,85 +78,96 @@ function openDetailsModal(playerIndex) {
                 </div>
             </div>
         </div>
-
         <div class="modal-main-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
             <div>
                 <h3>Resumo</h3>
                 <p style="color:var(--text-secondary); line-height:1.6">${p.summary}</p>
-                <p style="font-size: 1em; color: var(--text-primary);">
-                    <strong>Aniversário:</strong> ${p.birthday || 'Não informado'}
-                </p>
+                <p><strong>Aniversário:</strong> ${p.birthday || 'Não informado'}</p>
                 <p style="text-align:center; font-style:italic; border-top:1px solid #333; padding-top:10px">"${p.phrase}"</p>
-                
                 ${attributesHTML}
-                <img src="${p.image_status}" class="status-img" style="cursor:default">
+                <img src="${p.image_status}" class="status-img" onclick="openStatusImage('${p.image_status}')" title="Clique para ampliar">
             </div>
-
             <div>
                 <h3>Habilidades</h3>
                 <div style="background: #222; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
                     ${p.skills.length > 0 ? p.skills.map(s => `
-                        <div style="margin-bottom:8px;">
-                            <strong style="color: var(--accent-color)">${s.name}:</strong> ${s.desc}
-                        </div>
+                        <div style="margin-bottom:8px;"><strong style="color: var(--accent-color)">${s.name}:</strong> ${s.desc}</div>
                     `).join('') : 'Nenhuma habilidade cadastrada.'}
                 </div>
-
                 <h3>Ascensão</h3>
                 <div class="ascension-tabs">
-                    ${[0,1,2,3,4,5].map(lv => `
-                        <button class="asc-btn ${lv===0?'active':''}" onclick="updateAscensionInModal(${lv}, this)">${lv}</button>
-                    `).join('')}
+                    ${[0,1,2,3,4,5].map(lv => `<button class="asc-btn ${lv===0?'active':''}" onclick="updateAscensionInModal(${lv}, this)">${lv}</button>`).join('')}
                 </div>
-                
                 <div class="ascension-box" id="modal-asc-box" style="margin-bottom: 20px;">
-                    <strong>Melhoria (Nível 0):</strong><br>
-                    ${p.ascension_levels && p.ascension_levels[0] ? p.ascension_levels[0].upgrade_details : 'Base'}
+                    <strong>Melhoria (Nível 0):</strong><br>${p.ascension_levels && p.ascension_levels[0] ? p.ascension_levels[0].upgrade_details : 'Base'}
                 </div>
             </div>
-
-            <div class="combos-section">
+            <div class="combos-section" style="grid-column: 1 / -1;">
                 <h3>Combinações</h3>
-                <div class="combos-wrapper">
-                    ${p.combos.length > 0 ? p.combos.map(combo => `
-                        <div class="combo-item">
-                            <strong style="color:var(--accent-color); font-size: 1.1em;">${combo.name}</strong>
-                            <div class="team-simulation">
-                                ${combo.team_images.map(img => `<img src="${img}" class="team-img">`).join('')}
-                            </div>
-                            <div style="font-size:0.95em; color: var(--text-secondary);">${combo.benefits}</div>
+                ${p.combos.length > 0 ? p.combos.map(combo => `
+                    <div class="combo-item">
+                        <strong style="color:var(--accent-color)">${combo.name}</strong>
+                        <div class="team-simulation">
+                            ${combo.team_images.map(imgUrl => {
+                                // Extrai o nome do arquivo (ex: "img/nishikawa_main.jpeg" -> "nishikawa")
+                                const fileName = imgUrl.split('/').pop().split('.')[0]; 
+                                const cleanName = fileName.replace('_main', '').replace('_status', '');
+                                
+                                return `<img src="${imgUrl}" class="team-img" onclick="navigateToPlayer('${cleanName}')" title="Ver detalhes de ${cleanName}">`;
+                            }).join('')}
                         </div>
-                    `).join('') : '<p style="color:var(--text-secondary)">Nenhuma combinação disponível.</p>'}
-                </div>
+                        <div style="font-size:0.95em; color: var(--text-secondary);">${combo.benefits}</div>
+                    </div>
+                `).join('') : '<p>Nenhuma combinação disponível.</p>'}
             </div>
         </div>
     `;
-
     modal.classList.add('active');
-    document.body.style.overflow = 'hidden'; 
+    document.body.style.overflow = 'hidden';
 }
 
-// 3. FUNÇÕES DE FECHAR O MODAL
-function closeDetailsModal(e) {
-    if(e.target.classList.contains('details-overlay')) {
-        forceCloseDetailsModal();
+// --- FUNÇÃO PARA NAVEGAR ENTRE JOGADORES VIA COMBO ---
+function navigateToPlayer(namePart) {
+    // Procura no array principal um jogador cujo nome contenha a parte extraída da imagem
+    const index = players.findIndex(p => p.name.toLowerCase().includes(namePart.toLowerCase()));
+    
+    if (index !== -1) {
+        openDetailsModal(index);
+    } else {
+        console.warn("Jogador '" + namePart + "' não encontrado.");
     }
+}
+
+// --- FUNÇÕES DE CONTROLE DO STATUS MODAL ---
+function openStatusImage(src) {
+    const modal = document.getElementById('statusModal');
+    const modalImg = document.getElementById('statusImgExpanded');
+    modalImg.src = src;
+    modal.classList.add('active');
+}
+
+function closeStatusModal(e) {
+    if(!e || e.target.id === 'statusModal') {
+        document.getElementById('statusModal').classList.remove('active');
+    }
+}
+
+function closeDetailsModal(e) {
+    if(e.target.classList.contains('details-overlay')) forceCloseDetailsModal();
 }
 
 function forceCloseDetailsModal() {
     const modal = document.getElementById('detailsModal');
     modal.classList.remove('active');
-    document.body.style.overflow = ''; 
+    document.body.style.overflow = '';
     currentOpenedPlayerIndex = null;
 }
 
-// 4. ATUALIZAR ASCENSÃO DENTRO DO MODAL
 function updateAscensionInModal(level, btn) {
     const parent = btn.parentElement;
     parent.querySelectorAll('.asc-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    const box = document.getElementById(`modal-asc-box`);
-    
+    const box = document.getElementById('modal-asc-box');
     const p = players[currentOpenedPlayerIndex];
     if (p.ascension_levels && p.ascension_levels[level]) {
         box.innerHTML = `<strong>Melhoria (Nível ${level}):</strong><br>${p.ascension_levels[level].upgrade_details}`;
@@ -187,7 +178,6 @@ function filterPlayers() {
     const term = document.getElementById('searchBar').value.toUpperCase(); 
     const pos = document.getElementById('filterPosition').value;
     const rank = document.getElementById('filterRank').value;
-
     const filtered = players.filter(p => {
         const matchName = p.name.toUpperCase().includes(term); 
         const matchPos = (pos === 'ALL' || p.position === pos);
@@ -200,8 +190,7 @@ function filterPlayers() {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         forceCloseDetailsModal();
-        const imgModal = document.getElementById('imageModal');
-        if(imgModal) imgModal.classList.remove('active');
+        closeStatusModal();
     }
 });
 
