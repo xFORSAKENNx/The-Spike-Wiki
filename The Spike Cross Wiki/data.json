@@ -122,6 +122,10 @@
     { 
       "name": "Finta Topspin", 
       "desc": "O Bola realizado com Finta cai mais rápido devido à rotação." 
+    },
+    {
+      "name": "Voo",
+      "desc": "A velocidade de movimento aéreo aumenta durante salto de Cortada"
     }
   ],
   "combos": [
@@ -145,23 +149,23 @@
     { "level": 0, "upgrade_details": "Status base conforme o recrutamento." },
     { 
       "level": 1, 
-      "upgrade_details": "<strong>[Status]</strong> ATQ +4, Salto +4<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +10%" 
+      "upgrade_details": "<strong>[Status]</strong> ATQ +4, Salto +4<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +20%, Carga Base 36%<br><strong>[Voo]</strong> Velocidade de movimento aéreo 110%" 
     },
     { 
       "level": 2, 
-      "upgrade_details": "<strong>[Status]</strong> ATQ +3, Salto +2<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +20%" 
+      "upgrade_details": "<strong>[Status]</strong> ATQ +3, Salto +2<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +40%, Carga Base 42%<br><strong>[Voo]</strong> Velocidade de movimento aéreo 110%" 
     },
     { 
       "level": 3, 
-      "upgrade_details": "<strong>[Status]</strong> Salto +1, DEF +5<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +25%" 
+      "upgrade_details": "<strong>[Status]</strong> Salto +1, DEF +5<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +80%, Carga Base 54%<br><strong>[Voo]</strong> Velocidade de movimento aéreo 125%" 
     },
     { 
       "level": 4, 
-      "upgrade_details": "<strong>[Status]</strong> VEL +3, DEF +3<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +25%" 
+      "upgrade_details": "<strong>[Status]</strong> VEL +3, DEF +3<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +100%, Carga Base 60%<br><strong>[Voo]</strong> Velocidade de movimento aéreo 145%" 
     },
     { 
       "level": 5, 
-      "upgrade_details": "<strong>[Status]</strong> VEL +2, DEF +2<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +25%" 
+      "upgrade_details": "<strong>[Status]</strong> VEL +2, DEF +2<br><strong>[Dragão Azul]</strong> Velocidade de Carga do Medidor +200%, Carga Base 90%<br><strong>[Voo]</strong> Velocidade de movimento aéreo 160%" 
     }
   ]
   },
